@@ -1,0 +1,14 @@
+{
+  "name": "nodeexpress",
+  "version": "1.0.0",
+  "description": "Exercises with node express (bootcamp udemy)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sara Arellano",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
