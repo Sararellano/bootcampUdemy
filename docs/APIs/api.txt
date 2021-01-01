@@ -1,0 +1,20 @@
+ENDPOINT: access point to send the HTTP requestss to and get your response (is a URL)
+PATH: specific URL to add in URL endpoint (to customize data)
+PARAMETRES: after PATH and start with ? (more specific things)
+AUTHENTICATION: You have to identify you with some APIs. For example, you have to pay for more extre features
+
+
+EXAMPLE https://openweathermap.org/
+1. enter to my account
+2. Go to https://home.openweathermap.org/api_keys and see my key and copy it
+3. We're gointg to use actual weather by name: https://openweathermap.org/current
+4. In section "by name" copy: api.openweathermap.org/data/2.5/weather?q=Madrid&appid={API key}  and change it
+
+
+POSTMAN: download: https://www.postman.com/downloads/
+1. Open postman appid
+2. Click on + (near Launchpad tab)
+3. Near GET paste westher API web by name: api.openweathermap.org/data/2.5/weather
+4. Go to weather API web: Key: q (to get city name) //  and value: Madrid
+5. add other key: appid and value your key  //  add units and value: metrics
+6. Click on Send and see results
