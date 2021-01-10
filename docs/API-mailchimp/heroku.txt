@@ -1,0 +1,11 @@
+Create an account in heroku.com
+
+Help: https://devcenter.heroku.com/categories/nodejs-support
+
+1. Download Keroku commnad line interface: https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up y podemos usar el comando "heroku"
+
+mirar que tengamos versión de node mayor que v8.11.1: node --version // npm v5.6.0 o más // y git v2.15.1
+
+Crear archivo "Prcfile" y poner: web: node NOMBRE-JS-INDEX.js
+
+Sigo en folder BootcampUdemy2 y creo un git nuevo
