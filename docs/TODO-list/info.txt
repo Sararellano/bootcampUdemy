@@ -1,0 +1,9 @@
+Hacer templates: ejs.co
+
+1. vamos a EJS with Express: https://github.com/mde/ejs/wiki/Using-EJS-with-Express
+2. npm install ejs
+3. en JS pongo: app.set('view engine', 'ejs'); debajo de conts app..
+4. Creo carpeta "views" con archivo dentro: "NOMBRE.ejs" y creo HTML dentro: es el que va a renderizar
+5. el markup de EJS es <%= HOLA %>
+4. En vez de poner res.send o res.sendFile o res.write, ponemos lo de EJS: res.render('list', { foo: 'FOO' }) ->
+en 'list' pones el archivo principal dentro de "views" folder. y en foo, pones la variable que tienes en tu archivo list.ejs (kindOfDay)  --> res.render('list', { kindOfDay: day }) // y se pone al final del condicional
