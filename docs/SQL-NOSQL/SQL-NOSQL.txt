@@ -1,0 +1,17 @@
+Structured Query Language (SQL)
+Los más conocidos son: MySQL y PostgreSQL
+
+NOSQL: Los más conocidos: mongoDB y redis
+
+Diferencias entre SQL y NOSQL:
+Estructura
+- En SQL tienes como en excel (estructura de tablas), columnas con títulos. Es más estructurado. Pero puedes tener para un cliente la dirección y el email. Y en otro puedes tener sólo el email y en SQL te los rellena con NULL los que no tienen datos.
+- En NOSQL (estructura de objetos), en mongoDB se representan con objetos JS y no rellena con NULL los que no tienen datos.
+
+SQL crea mejores relaciones entre los datos (enter las tablas de excel) que NOSQL
+
+- SQL más antiguo
+- NOSQL más nuevo
+
+- SQL necesita Schema
+- NOSQL es más flexible a los cambios

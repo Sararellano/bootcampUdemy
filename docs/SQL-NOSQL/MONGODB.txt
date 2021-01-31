@@ -1,0 +1,84 @@
+Son objetos los datos.
+docs.mongodb.com/manual/crud
+
+En la terminal:
+
+mongo : abre consola(shell) de mongo
+mongod : abre server
+help: te pone todos lo comandos disponibles
+show dbs : muestra las BD que tienes
+
+1. CREATE
+use name-DB (show shopDB): crea DB pero si haces 'show dbs' no la ves porque no tiene datos
+db (te dice en qué DB estás)
+db.products.insertOne({_id: 1, name: 'Pen', price, 1.20})  : añades un producto
+show collections : te dice las columnas que tienes (ahora sólo products)
+db.products.insertOne({_id: 2, name: 'Pencil', price: 0.80})
+
+2. READ
+db.products.find()  : te muestra todos los datos de tu objeto products
+db.products.find({name: 'Pencil'})  Te da sólo los datos del objeto que tenga nombre "pencil"
+db.products.find({price: {$gt: 1}})  Con {$gt: 1} das una query que te busca los datos que sean mayores a 1. Hay muchos tipos de queties para buscar
+db.products.find({_id: 1}, {name: 1}) Para el objeto id:1 dame sólo el dato del NAME
+
+3. UPDATE
+db.products.updateOne({ _id: 1 }, {$set: {stock: 32}}) Para el obj con id:1 añade ($set) un valor nuevo: stock: 32
+
+4. DELETE
+db.products.deleteOne({_id: 2}) Borras el objeto con id 2 (entero)
+
+
+----
+
+RELATIONSHIP: unir objetos
+db.products.insert(
+  {
+    _id: 3,
+    name: 'Rubber',
+    price: 1.30,
+    stock: 43,
+    reviews: [
+      {
+        authorName: 'Sally',
+        rating: 5,
+        review: 'Best rubber ever!'
+      },
+      {
+        authorName: 'Tomas',
+        rating: 1,
+        review: 'The worst rubber'
+      },
+    ]
+  }
+)
+
+has añadido un nuevo id (3) y un nuevo campo para él: reviews 
+
+db.products.insertOne({
+  _id: 2,
+  name: 'Pencil',
+  stock: 12,
+  review: [
+    {
+        authorName: 'Pepe',
+        rating: 5,
+        review: 'Best pencil ever!'
+      },
+      {
+        authorName: 'Bea',
+        rating: 1,
+        review: 'The worst pencil'
+      },
+  ]
+})
+
+
+-----
+
+Cómo integrar MongoDB en tu proyecto Node.JS
+
+- Usamos paquete mongoose: alternativa a native MongoDB driver
+
+------
+
+Cerrar mongoDB: CTRL + C
