@@ -1,0 +1,19 @@
+CodeSandbox - plantillas para crear proyectos rápidamente. Puedes hacer "fork" para guardarlo en tu github
+
+Babel: JS compilador -> babeljs.io/repl
+
+Las primeras letras en mayusc y con uppercase
+
+Empezar app: https://reactjs.org/docs/create-a-new-react-app.html#create-react-app
+npx create-react-app my-app
+cd my-app
+npm start
+
+
+Con Hooks: pones en App.jsx el import del hook que estés usando. Los hooks son de React 16.8. 
+Te permiten usar los estados y otras cosas de React sin escribir CLASES.
+No puedes usar chooks dentro de un componente clase.
+
+Hooks: https://reactjs.org/docs/hooks-reference.html  - Actualizar estados
+Basic hooks: useState,  useEffect, useContext
+Otros: useReducer,  useCallback  useMemo,  useRef,  useImperativeHandle,  useLayaoutEffect,  useDebugValue
